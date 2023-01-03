@@ -17,13 +17,13 @@ body {
     font-family: var(--ff-body);
 }
 .container {
-    margin: 70px;
+    margin: 4rem;
 }
 .header {
-    margin-bottom: 70px;
+    margin-bottom: 4rem;
 }
 .header img {
-    width: 200px;
+    width: 12.5rem;
 }
 .content {
     display: flex;
@@ -34,18 +34,18 @@ body {
 .content_text {
     width: 40%;
     color: white;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 .content_text h1 {
     font-family: var(--ff-headings);
     font-weight: var(--fw-600);
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 .content_text p {
     font-weight: var(--fw-400);
-    font-size: 16px;
-    margin-bottom: 50px;
+    font-size: 1rem;
+    margin-bottom: 3rem;
     width: 90%;
 }
 .content_text a {
@@ -61,6 +61,7 @@ body {
     background-color: var(--clr-primary-magenta);
     color: white;
 }
+/* Social Icons Styles */
 .media {
     color: white;
     display: flex;
@@ -70,7 +71,7 @@ body {
 .icon {
     border: 1px solid white;
     border-radius: 50%;
-    padding: 8px;
+    padding: .5rem;
     cursor: pointer;
     transition: .5s;
 }
@@ -85,20 +86,20 @@ body {
         background-repeat: no-repeat;
     }
     .container {
-        margin: 40px;
+        margin: 2.5em;
     }
     .header img {
-        width: 110px;
+        width: 7.5em;
     }
     .header {
-        margin-bottom: 65px;
+        margin-bottom: 4em;
     }
     .content {
         display: block;
     }
     .content_illustration {
          width: 100%;
-         margin-bottom: 15px;
+         margin-bottom: 1em;
     }
     .content_text {
         margin-left: 0;
@@ -106,19 +107,19 @@ body {
         text-align: center;
     }
     .content_text h1 {
-        font-size: 25px;
+        font-size: 1.5em;
     }
     .content_text p {
-        font-size: 15px;  
+        font-size: .9em;  
         width: 100%;
     }
     .content_text a {
-        padding: 0.7rem 4rem;
-        font-size: 12px;
+        padding: 0.75em 4em;
+        font-size: .75em;
     }
     .media {
         justify-content: center;
-        margin-top: 60px;
+        margin-top: 3.75em;
         gap: 10px;
     }
 }
