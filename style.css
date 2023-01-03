@@ -1,0 +1,124 @@
+/* Custom Properties */
+:root {
+    --clr-primary-violet: hsl(257, 40%, 49%);
+    --clr-primary-magenta: hsl(300, 69%, 71%);
+    --clr-sqlks:hsl(204, 43%, 93%);
+
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-headings: 'Poppins',sans-serif;
+}
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--clr-primary-violet);
+    background-repeat: no-repeat;
+    font-family: var(--ff-body);
+}
+.container {
+    margin: 70px;
+}
+.header {
+    margin-bottom: 70px;
+}
+.header img {
+    width: 200px;
+}
+.content {
+    display: flex;
+}
+.content_illustration {
+    width: 60%;
+}
+.content_text {
+    width: 40%;
+    color: white;
+    padding-top: 40px;
+}
+.content_text h1 {
+    font-family: var(--ff-headings);
+    font-weight: var(--fw-600);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.content_text p {
+    font-weight: var(--fw-400);
+    font-size: 16px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+.content_text a {
+    background-color: white;
+    color: var(--clr-primary-violet);
+    text-decoration: none;
+    padding: 0.8rem 3.2rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+    transition: .5s;
+}
+.content_text a:is(:hover,:focus){
+    background-color: var(--clr-primary-magenta);
+    color: white;
+}
+.media {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+.icon:is(:hover, :focus) {
+    color: var(--clr-primary-magenta);
+    border: 1px solid var(--clr-primary-magenta);
+}
+
+@media (max-width:375px){
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .container {
+        margin: 40px;
+    }
+    .header img {
+        width: 110px;
+    }
+    .header {
+        margin-bottom: 65px;
+    }
+    .content {
+        display: block;
+    }
+    .content_illustration {
+         width: 100%;
+         margin-bottom: 15px;
+    }
+    .content_text {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .content_text h1 {
+        font-size: 25px;
+    }
+    .content_text p {
+        font-size: 15px;  
+        width: 100%;
+    }
+    .content_text a {
+        padding: 0.7rem 4rem;
+        font-size: 12px;
+    }
+    .media {
+        justify-content: center;
+        margin-top: 60px;
+        gap: 10px;
+    }
+}
